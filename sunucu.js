@@ -38,6 +38,9 @@ const sunucu = http.createServer((req, res) => {
         gonder(res, 200, 'text/html', anaSayfa);
     } else if (yol === '/hakkimda') {
         gonder(res, 200, 'text/html', hakkimda);
+    } else if (yol === '/api/ders') {
+        gonder(res, 200, 'application/json',
+            JSON.stringify({ kod: 'BMH231', ad: 'Web Programlama', gun: 'CUMA' }));
     } else {
         gonder(res, 404, 'text/plain', 'Sayfa bulunamadı');
     }
