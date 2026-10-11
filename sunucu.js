@@ -31,6 +31,11 @@ const hakkimda = `<!DOCTYPE html>
 const sunucu = http.createServer((req, res) => {
     console.log(req.method, req.url);
 
+
+    if (req.method !== 'GET') {
+        return gonder(res, 405, 'text/plain', 'Yöntem desteklenmiyor', { Allow: 'GET' });
+    }
+
     // Sorgu dizesini atıp sadece yolu al
     const yol = req.url.split('?')[0];
 
