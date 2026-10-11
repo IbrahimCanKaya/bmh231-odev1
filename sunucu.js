@@ -13,7 +13,7 @@ const anaSayfa = `<!DOCTYPE html>
 <html lang="tr">
 <head><meta charset="utf-8"><title>BMH231 Ödev 1</title></head>
 <body>
-<h1>BMH231 Ödev 1</h1>
+<h1>Merhaba, ben İbrahim</h1>
 <a href="/hakkimda">Hakkımda</a>
 </body>
 </html>`;
