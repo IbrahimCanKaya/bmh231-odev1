@@ -41,6 +41,11 @@ const sunucu = http.createServer((req, res) => {
     } else if (yol === '/api/ders') {
         gonder(res, 200, 'application/json',
             JSON.stringify({ kod: 'BMH231', ad: 'Web Programlama', gun: 'CUMA' }));
+    } else if (yol === '/api/agep') {
+        const sonTeslim = dayjs('2026-11-01');
+        const kalanGun = sonTeslim.startOf('day').diff(dayjs().startOf('day'), 'day');
+        gonder(res, 200, 'application/json',
+            JSON.stringify({ sonTeslim: '01.11.2026', kalanGun: kalanGun }));
     } else {
         gonder(res, 404, 'text/plain', 'Sayfa bulunamadı');
     }
