@@ -32,9 +32,9 @@ Proje, HTTP isteklerini karşılayan ve istenen URL'ye göre HTML veya JSON yan�
 | Teknoloji | Kullanım amacı |
 |---|---|
 | [Node.js](https://nodejs.org/) | Sunucu tarafında JavaScript çalıştırma |
-| `http` | HTTP sunucusu oluşturma |
+| [http] | HTTP sunucusu oluşturma |
 | [Day.js](https://day.js.org/) | Tarih ve zaman işlemleri |
-| npm | Paket yönetimi |
+| [npm] | Paket yönetimi |
 
 ## 🚀 Kurulum ve Çalıştırma
 
